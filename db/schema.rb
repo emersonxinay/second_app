@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_22_074214) do
+ActiveRecord::Schema.define(version: 2019_08_23_010345) do
 
   create_table "students", force: :cascade do |t|
     t.string "name"
     t.integer "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email" #esto se crea primero para migrar : "rails g migration AddEmailToStudent" y luego email  comando "rake db:migrate" 
   end
 
 end

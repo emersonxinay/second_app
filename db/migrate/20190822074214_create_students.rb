@@ -8,3 +8,4 @@ class CreateStudents < ActiveRecord::Migration[5.2]
     end
   end
 end
+#rake db:migrate --- para correr cuando en las modificaciones
