@@ -1,0 +1,23 @@
+<link href="https://stackpath.bootstrapcdn.com/bootswatch/3.4.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-S0cN63+vYrG1/kfcUhtXsKZfyE9azrjw5p+Q5yYU+Dzjg60sZUEYsIKIb5O/oaT3" crossorigin="anonymous">
+<h1 class="m-5">Pagina de landing</h1>
+
+<table class="m-5">
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.email %></td>
+          </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'Back', students_path %>
